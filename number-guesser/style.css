@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", open-sans;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin: 1rem 0rem;
+}
+
+.min {
+
+}
+
+.max {
+
+}
+
+.container {
+    display: flex;
+  
+}
+#guess {
+    min-width: 7rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: none;
+    margin-right: 0.5rem;
+    border: 1px solid #000;
+    
+}   
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#guess-value {
+    all: unset;
+    background-color: rgb(251, 197, 251);
+    cursor: pointer;
+    padding: 1rem 2rem;    
+    transition: 0.3s ease-in-out;
+    border: 1px solid #000;
+    text-transform: uppercase;
+}
+
+#guess-value:hover {
+    background-color: antiquewhite;
+}
+
+.message {
+    margin: 2rem 0rem;
+    font-size: 2rem;
+}
+
+.livesleft {
+    margin: 2rem 0rem;
+}
