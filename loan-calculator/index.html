@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Loan Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="calculator"> 
+
+            <!-- LOAN FORM SECTION -->
+            <form class="loan-wrapper">
+                <h1 class="calculator_title">Loan Calculator</h1>
+                <div class="loan_container">
+                    <span>$</span>
+                    <input type="text" placeholder="Loan Amount" id="loan"/>
+                </div>
+                <div class="interest_container">
+                    <span>%</span>
+                    <input type="text" placeholder="Annual Interest" id="interest">
+                </div>
+                <div class="years_container">
+                    <input type="text" placeholder="Repayment Years" id="years"/>
+                </div>
+                <input type="submit" id="calculate" class="calculate-btn" value="Calculate"/>
+            </form>
+                <!-- LOADER SECTION -->
+                <div class="loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- RESULTS SECTION -->
+            <div class="results">
+                <h1 class="results-title">Results</h1>
+                <div class="results-monthly">
+                    <span>Monthly Payment</span>
+                    <p></p>
+                </div>
+                <div class="results-total">
+                    <span>Total Payment</span>
+                    <p></p>
+                </div>
+                <div class="results-interest">
+                    <span>Total Interest</span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
